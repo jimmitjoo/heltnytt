@@ -1,0 +1,2447 @@
+/* Theme Name: Manchester */
+/* v1.0 | 20120111 */
+
+
+/**/
+/* NORMALIZE */
+/**/
+
+/* # HTML5 display definitions */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section
+	display: block
+
+audio, canvas, video
+	display: inline-block
+	*display: inline
+	*zoom: 1
+
+audio:not([controls]), [hidden]
+	display: none
+
+/* # Base */
+
+/*
+/* 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+/* 2. Force vertical scrollbar in non-IE
+/* 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g */
+
+html
+	font-size: 100%
+	overflow-y: scroll
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+body
+	margin: 0
+	font-size: 13px
+	line-height: 1.231
+	font-family: sans-serif
+	color: #222
+	-moz-box-shadow: none
+
+button, input, select, textarea
+	font-family: sans-serif
+	color: #222
+	-moz-box-shadow: none
+
+/* Remove mozilla form styling for required and invalid input
+/* */
+
+input:invalid input:-moz-submit-invalid input:required
+	-moz-box-shadow: none
+
+/* 
+/* Remove text-shadow in selection highlight: h5bp.com/i
+/* These selection declarations have to be separate
+/* Also: hot pink! (or customize the background color to match your design) */
+
+html
+	&:-moz-selection, &:selection
+		background: #aaa
+		color: #fff
+		text-shadow: none
+
+/* # Links */
+
+a
+	color: #00e
+	&:visited
+		color: #551a8b
+	&:hover
+		color: #06e
+	&:focus
+		outline: thin dotted
+	&:hover, &:active
+		outline: 0
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+
+/* # Typography */
+
+abbr[title]
+	border-bottom: 1px dotted
+
+b, strong
+	font-weight: bold
+
+blockquote
+	margin: 1em 40px
+
+dfn
+	font-style: italic
+
+hr
+	display: block
+	height: 1px
+	border: 0
+	border-top: 1px solid #ccc
+	margin: 1em 0
+	padding: 0
+
+ins
+	background: #ff9
+	color: #000
+	text-decoration: none
+
+mark
+	background: #ff0
+	color: #000
+	font-style: italic
+	font-weight: bold
+
+/* Redeclare monospace font family: h5bp.com/j */
+
+pre, code, kbd, samp
+	font-family: monospace, monospace
+	_font-family: 'courier new', monospace
+	font-size: 1em
+
+/* Improve readability of pre-formatted text in all browsers */
+
+pre
+	white-space: pre
+	white-space: pre-wrap
+	word-wrap: break-word
+
+q
+	quotes: none
+	&:before, &:after
+		content: ""
+		content: none
+
+small
+	font-size: 85%
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+
+sub
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+
+sup
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+	top: -0.5em
+
+sub
+	bottom: -0.25em
+
+/* # Lists */
+
+ul, ol
+	margin: 1em 0
+	padding: 0 0 0 40px
+
+dd
+	margin: 0 0 0 40px
+
+nav
+	ul, ol
+		list-style: none
+		list-style-image: none
+		margin: 0
+		padding: 0
+
+/* # Embedded content */
+
+/*
+/* 1. Improve image quality when scaled in IE7: h5bp.com/d
+/* 2. Remove the gap between images and borders on image containers: h5bp.com/e */
+
+img
+	border: 0
+	-ms-interpolation-mode: bicubic
+	max-width: 100%
+	vertical-align: middle
+
+/*
+/* Correct overflow not hidden in IE9 */
+
+svg:not(:root)
+	overflow: hidden
+
+/* Figures */
+
+figure, form
+	margin: 0
+
+/* Forms */
+
+fieldset
+	border: 0
+	margin: 0
+	padding: 0
+
+/* Indicate that 'label' will shift focus to the associated form element */
+
+label
+	cursor: pointer
+
+/* 
+/* 1. Correct color not inheriting in IE6/7/8/9 
+/* 2. Correct alignment displayed oddly in IE6/7 */
+
+legend
+	border: 0
+	*margin-left: -7px
+	padding: 0
+
+/*
+/* 1. Correct font-size not inheriting in all browsers
+/* 2. Remove margins in FF3/4 S5 Chrome
+/* 3. Define consistent vertical alignment display in all browsers */
+
+button, input, select, textarea
+	font-size: 100%
+	margin: 0
+	vertical-align: baseline
+	*vertical-align: middle
+
+/*
+/* 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+/* 2. Correct inner spacing displayed oddly in IE6/7 */
+
+button, input
+	line-height: normal
+	*overflow: visible
+
+/*
+/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
+
+table
+	button, input
+		*overflow: auto
+
+/*
+/* 1. Display hand cursor for clickable form elements
+/* 2. Allow styling of clickable form elements in iOS */
+
+button
+	cursor: pointer
+	-webkit-appearance: button
+
+input
+	&[type="button"], &[type="reset"], &[type="submit"]
+		cursor: pointer
+		-webkit-appearance: button
+	&[type="checkbox"], &[type="radio"]
+		box-sizing: border-box
+	&[type="search"]
+		-webkit-appearance: textfield
+		-moz-box-sizing: content-box
+		-webkit-box-sizing: content-box
+		box-sizing: content-box
+		&::-webkit-search-decoration
+			-webkit-appearance: none
+
+/* Consistent box sizing and appearance */
+
+/*	Remove inner padding and border in FF3/4: h5bp.com/l */
+
+button::-moz-focus-inner, input::-moz-focus-inner
+	border: 0
+	padding: 0
+
+/* 
+/* 1. Remove default vertical scrollbar in IE6/7/8/9 
+/* 2. Allow only vertical resizing */
+
+textarea
+	overflow: auto
+	vertical-align: top
+	resize: vertical
+
+/* Colors for form validity */
+
+input:invalid, textarea:invalid
+	background-color: #f0dddd
+
+/* # Tables */
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+td
+	vertical-align: top
+	
+.alignleft 
+	float: left
+	margin-right: 15px
+
+.alignright
+	float: right
+	margin-left: 15px
+
+/**/
+/* Blueprint Built In */
+/**/
+
+.complex-search select
+	width: 200px
+#simple-search select
+	width: 100px
+		
+/**/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+	background: transparent
+	border: 0
+	font-size: 100%
+	margin: 0
+	outline: 0
+	padding: 0
+	vertical-align: baseline
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote
+	&:before, &:after
+		content: ""
+		content: none
+
+q
+	&:before, &:after
+		content: ""
+		content: none
+
+/* remember to highlight inserts somehow! */
+
+ins
+	text-decoration: none
+
+del
+	text-decoration: line-through
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+/* Headings */
+
+h1
+	font-size: 1.714em
+
+/* 24px */
+
+h2
+	font-size: 1.571em
+
+/* 22px */
+
+h3
+	font-size: 1.429em
+
+/* 20px */
+
+h4
+	font-size: 1.286em
+
+/* 18px */
+
+h5
+	font-size: 1.143em
+
+/* 16px */
+
+h6
+	font-size: 1em
+
+/* 14px */
+
+h1, h2, h3, h4, h5, h6
+	font-weight: bold
+	line-height: 1.1
+	margin-bottom: 0.8em
+
+/* Anchors */
+
+a
+	outline: 0
+	text-decoration: none
+	img
+		border: 0
+		text-decoration: none
+
+/* Paragraphs */
+
+p
+	margin-bottom: 1.143em
+
+strong, b
+	font-weight: bold
+
+em, i
+	font-style: italic
+
+/* Lists */
+
+ul
+	list-style: outside disc
+	margin: 1em 0 1.5em 1.5em
+
+ol
+	list-style: outside decimal
+	margin: 1em 0 1.5em 1.5em
+
+dl
+	margin: 0 0 1.5em 0
+
+dt
+	font-weight: bold
+
+dd
+	margin-left: 1.5em
+
+/* Quotes */
+
+blockquote
+	font-style: italic
+
+/* Tables */
+
+table
+	margin: 0.5em auto 1.5em auto
+	width: 98%
+
+/* Thead */
+
+thead th
+	padding: 0.5em 0.4em
+	text-align: left
+
+/* Tbody */
+
+tbody td
+	padding: 0.5em 0.4em
+
+/* HTML5 tags */
+
+header, footer, section, aside, nav, article, figure
+	display: block
+	padding: 0
+	margin: 0
+
+/* layout starts here */
+
+body
+	font: normal 1em Arial, Helvetica, sans-serif
+	background-color: #f3f3f3
+	height: 100%
+	overflow-y: auto
+
+/* horizontal partitioning */
+
+header#lvl1
+	width: 100%
+	min-width: 970px !important
+
+section
+	&#lvl2, &#lvl4, &#lvl5, &#lvl6
+		width: 100%
+		min-width: 970px !important
+	&#lvl4
+		color: #666666
+		padding: 0px 0 0 0
+
+footer#lvl6
+	clear: both
+	padding: 15px 0
+
+/* wrapper */
+
+div.wrapper
+	width: 970px
+	height: auto
+	margin: 0 auto
+
+/* Common classes */
+
+.lrpad10
+	padding: 0 4px
+
+.clr, .clear
+	clear: both
+
+.blue
+	color: #094ba1
+
+.green
+	color: #5e8506
+
+.nrm-txt
+	font-size: 0.786em
+
+.sma-txt
+	font-size: 0.714em
+
+div
+	&.divider
+		padding: 6px 0
+	&.separator-1-sma
+		float: left
+		height: 22px
+		width: 584px
+		margin: 15px 0 10px 0
+		background: url(../img/bg-separator1-sma.png) no-repeat center top
+	&.separator-1-big
+		float: left
+		height: 22px
+		width: 970px
+		background: url(../img/bg-separator1-big.png) no-repeat center top
+	&.separator-2-sma
+		float: left
+		height: 13px
+		width: 584px
+		margin: 15px 0 10px 0
+		background: url(../img/bg-separator2-sma.png) no-repeat center top
+
+/* Text Alignment */
+
+.aR
+	text-align: right
+
+.aL
+	text-align: left
+
+.aC
+	text-align: center
+
+/* =========== start HEADER ============ */
+/* ----- Header Logo ----- */
+
+section.company-logo
+	float: left
+	width: 400px
+	line-height: 1
+	padding-top: 20px
+	#logo
+		float: left
+		min-height: 50px
+		margin-right: 10px
+	h1
+		font-size: 2.25em
+		font-weight: bold
+		margin: 0
+		a, a:visited
+			color: #e60202
+			text-decoration: none
+	#slogan
+		color: #686868
+		font-size: 0.9em
+		text-shadow: 1px 1px 1px white
+
+/* ----- Header Contact Info ----- */
+
+section
+	&.contact-info
+		float: right
+		margin-bottom: 20px
+		padding: 10px 20px
+		background-color: #e8e8e8
+		font-size: 1.125em
+		-webkit-border-radius: 0 0 8px 8px
+		-moz-border-radius: 0 0 8px 8px
+		border-radius: 0 0 8px 8px
+		-moz-box-shadow: 0 0 3px 0 #888888
+		-webkit-box-shadow: 0 0 3px 0 #888888
+		box-shadow: 0 0 3px 0 #888888
+	&.email
+		float: left
+		background: url(../img/icon_email.png) no-repeat left 0px
+		padding: 0 20px 0 30px
+		a, a:visited
+			color: #094BA1
+			&:hover
+				color: #5E8506
+	&.phone
+		float: left
+		background: url(../img/icon_phone.png) no-repeat left 0px
+		padding: 0 0 0 22px
+
+/* ========== end HEADER=========== */
+/* ========== start NAVIGATION MENU ========== */
+header
+	nav.main-nav
+		width: 978px
+		margin: 20px 0
+		font-weight: bold
+		clear: both
+		float: left
+		.menu-primary-container
+			float: right
+		ul
+			li.current_page_item
+				color: #fff
+				span
+					display: inline !important
+				a
+					color: #fff !important
+					background: #1C4EAE
+			li
+				display: inline
+				margin: 0 15px
+				text-transform: uppercase
+				a
+					color: #094BA1
+					padding: 5px 10px
+					border-radius: 5px
+					&:visited
+						color: #094BA1
+					&:hover
+						color: #fff
+						background: #1C4EAE
+						// background: -webkit-gradient(linear, left top, left bottom, from(#263e9f), to(#125cbc))
+						// background: -moz-linear-gradient(top, #263e9f, #125cbc)
+						// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#263e9f', endColorstr='#125cbc')
+				span
+					display: none
+					border-left: 8px solid transparent
+					border-right: 8px solid transparent
+					border-top: 8px solid #125cbc
+					position: absolute
+					margin-left: -1%
+					margin-top: 22px
+				&:hover span
+					display: inline !important
+
+
+/* Slideshow */
+.orbit-wrapper
+	float: left
+	margin: 2px 17px 10px 5px
+div
+	&#slideshow
+		position: relative
+		clear: both
+		width: 970px
+		margin: 0
+		padding: 0
+		form
+			background: none
+			padding: 12px
+		h5
+			font-weight: normal
+			color: #535353
+	&#form-search
+		float: left
+		width: 970px
+		margin: 4px 0 28px 0
+		padding: 0
+		color: #666666
+		background-color: #e5e5e5
+		text-shadow: 1px 1px 1px white
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: inset 1px 1px 10px #9a9a9a
+		-webkit-box-shadow: inset 1px 1px 10px #9a9a9a
+		box-shadow: inset 1px 1px 10px #9a9a9a
+		form
+			background: none
+			padding: 15px 12px 20px 20px
+		h5
+			font-weight: normal
+			color: #535353
+		h6
+			margin: 0 0 5px 0
+			font-size: 0.9em
+			font-weight: normal
+			color: #535353
+	&#form-popup
+		float: left
+		width: 474px
+		margin: 0
+		padding: 12px
+		color: #666666
+		background-color: #e5e5e5
+		text-shadow: 1px 1px 1px white
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: inset 1px 1px 10px #9a9a9a
+		-webkit-box-shadow: inset 1px 1px 10px #9a9a9a
+		box-shadow: inset 1px 1px 10px #9a9a9a
+		form
+			background: none
+			padding: 12px
+		h5
+			margin-bottom: 3px
+			font-weight: normal
+			color: #535353
+		h6
+			margin: 0
+			font-weight: normal
+			color: #535353
+		.row
+			float: left
+			margin: 5px 0 0 0
+			padding-bottom: 5px
+			label
+				float: left
+				width: 150px
+				margin: 0
+				padding-right: 10px
+				font-size: 0.714em
+				font-weight: normal
+				color: #535353
+	&.tbl-col-1, &.tbl-col-2, &.tbl-col-1 label, &.tbl-col-2 label
+		float: left
+		width: 145px
+		margin: 0 0 0 5px
+	&.tbl-col-3, &.tbl-col-4
+		float: left
+		width: 65px
+		margin: 0
+	&.tbl-col-1
+		color: #5c5c5c
+		font-size: 0.786em
+		line-height: 1.3em
+	&.tbl-col-2
+		color: #5c5c5c
+		font-size: 0.786em
+		line-height: 1.3em
+		margin: 0 0 0 20px
+	&.tbl-col-4
+		margin: 0 0 0 15px
+	&.tbl-col-5
+		float: left
+		width: 287px
+		margin: 0 28px 0 0
+	&.tbl-col-6
+		float: left
+		width: 316px
+		margin: 0
+	&.tbl-col-5, &.tbl-col-6
+		color: #5c5c5c
+		font-size: 0.786em
+		line-height: 1.3em
+	&.tbl-col-6-1
+		float: left
+		width: 148px
+	&.tbl-col-6-2
+		float: left
+		width: 148px
+		margin: 0 0 0 20px
+	&.tbl-col-6-3
+		float: left
+		width: 316px
+	&.tbl-col-6-1 label
+		float: left
+		width: 60px
+		margin: 6px 0 0 0
+		padding: 6px 0 0 5px
+		color: #5c5c5c
+		font-size: 0.857em
+		line-height: 1.3em
+	&.tbl-col-6-2 label, &.tbl-col-6-3 label
+		float: left
+		width: 65px
+		margin: 6px 0 0 0
+		padding: 6px 0 0 0
+		color: #5c5c5c
+		font-size: 0.857em
+		line-height: 1.3em
+	&.tbl-col-6-2 span
+		position: relative
+		right: -85px
+	&.tbl-col-7
+		float: left
+		width: 739px
+		padding: 9px 0 0 0
+		label
+			float: left
+			margin: 0 12px 0 2px
+			padding: 2px 0 0 0
+			font-size: 0.786em
+			color: #5c5c5c
+	&.tbl-col-1-3, &.tbl-col-2-3
+		float: left
+		width: 287px
+		margin: 0 28px 0 0
+	&.tbl-col-3-3
+		float: left
+		width: 316px
+		margin: 0
+	&.tbl-col-1-3, &.tbl-col-2-3
+		color: #5c5c5c
+		font-size: 0.786em
+		line-height: 1.3em
+	&.tbl-col-3-3
+		color: #5c5c5c
+		font-size: 0.786em
+		line-height: 1.3em
+		label
+			float: left
+			width: 65px
+			margin: 0
+	&.cselect, &.cselect2, &.cselect3, &.cselect4, &.cselect5, &.cselect6
+		float: left
+		height: 25px
+		padding: 0
+		margin: 5px 0 10px 0
+		font-weight: normal
+		font-size: 0.9em
+	&.cselect
+		background-color: white
+		width: 140px
+		-webkit-border-radius: 4px
+		-moz-border-radius: 4px
+		border-radius: 4px
+
+/* =========== start FORMS CONTAINERS ============ */
+/* ----- Form Home ----- */
+/* ----- Form Search ----- */
+/* ----- Form Popups ----- */
+/* ============ end FORMS CONTAINERS ============= */
+/* =========== start FORMS FIELDS ============ */
+/* ----- Simple Search Divs ----- */
+/* ----- Extended Search Divs ----- */
+/* ----- Customs Fields/Divs ----- */
+
+
+
+/* ============ end FORMS FIELDS ============= */
+/* Left Content section styles */
+
+section
+	&.list
+		width: 584px
+		float: left
+		margin: 8px 16px 0 4px
+		padding: 12px
+		background-color: white
+		color: #424242
+		border: 1px solid #c1c1c1
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: 0 0 3px #888888
+		-webkit-box-shadow: 0 0 3px #888888
+		box-shadow: 0 0 3px #888888
+	&.list2
+		width: 584px
+		float: left
+		margin: 0 16px 0 0
+		padding: 0 12px 12px 12px
+		color: #424242
+	&.list h5, &.list2 h5
+		font-weight: normal
+		color: #535353
+	&.list-item
+		width: 100%
+	&.list-boxed
+		width: 572px
+		float: left
+		margin: 4px 4px 10px 4px
+		padding: 12px
+		background-color: white
+		color: #424242
+		border: 1px solid #c1c1c1
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: 0 0 3px #888888
+		-webkit-box-shadow: 0 0 3px #888888
+		box-shadow: 0 0 3px #888888
+	&.list-pic
+		float: left
+		width: 150px
+		margin: 0 14px 0 0
+		.thumbs
+			width: 144px
+			height: 93px
+			padding: 3px
+			margin-bottom: 19px
+			background-color: #c3c3c3
+	&.list-txt
+		float: left
+		width: 420px
+		padding: 0
+	&.list-info
+		float: left
+		width: 290px
+		padding: 0 10px 0 0
+		font:
+			size: 13pt
+		h5
+			line-height: 1.2em
+			color: #739527
+			margin: 0
+			padding: 0
+			a
+				font-weight: bold
+				line-height: 1.2em
+				color: #094ba1
+				&:hover
+					color: #739527
+		h6
+			padding-bottom: 10px
+		span.beds-n-baths
+			font:
+				size: 12pt
+				weight: 400
+		b
+			font:
+				size: 12pt
+				weight: 600
+	&.list-price
+		float: left
+		width: 120px
+		padding: 0
+		text-align: right
+	&.list-links
+		float: left
+		width: 420px
+	&.list-fav a
+		float: left
+		background: url(../img/icon_fav.png) no-repeat 0 2px
+		margin: 5px 13px 0 0
+		padding: 0 0 3px 17px
+		font-size: 0.786em
+		font-weight: bold
+		color: #424242
+		text-decoration: underline
+	&.list-req a
+		float: left
+		background: url(../img/icon_req.png) no-repeat 0 2px
+		margin: 5px 13px 0 0
+		padding: 0 0 3px 17px
+		font-size: 0.786em
+		font-weight: bold
+		color: #424242
+		text-decoration: underline
+	&.list-shr
+		float: left
+		width: 100%
+		margin: 0 0 0 0
+		padding: 10px 0 0 0
+		font-size: 0.786em
+		color: #424242
+		span
+			float: left
+			padding: 6px 0 0 0
+	&.list-btn1
+		float: right
+	&.list-btn2
+		float: left
+		width: 584px
+		margin: -15px 0 0 0
+		padding: 0 0 10px 0
+	&.list-notelist
+		float: left
+		width: 584px
+		margin: 0
+		padding: 0
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li
+				float: left
+				width: 584px
+				display: block
+				margin: 0
+				padding: 5px 0px
+				font-size: 0.786em
+				border-width: 1px 0 0 0
+				border-style: dotted
+				border-color: #959595
+				p
+					float: left
+					width: 562px
+					margin: 0
+					padding: 0
+	&.list-nav
+		float: left
+		width: 584px
+		padding: 0 0 5px 0
+		text-align: right
+		a
+			margin: 0 0 0 5px
+			padding: 3px 6px
+			font-size: 0.786em
+			font-weight: bold
+			color: #585858
+			&:hover, &.active
+				color: white
+				background-color: #a6a6a6
+				-webkit-border-radius: 2px
+				-moz-border-radius: 2px
+				border-radius: 2px
+	&.list-details, &.list-amenity
+		float: left
+		width: 584px
+		font-size: 0.786em
+		color: #424242
+	&.list-details-1-2
+		float: left
+		width: 280px
+		margin: 0 24px 0 0
+	&.list-details-2-2
+		float: left
+		width: 240px
+		margin: 0 0 0 40px
+	&.list-details-1-2 label, &.list-details-2-2 label
+		float: left
+		width: 110px
+		padding-right: 10px
+		font-weight: bold
+		line-height: 1.4em
+	&.list-details-1-2 p, &.list-details-2-2 p
+		float: left
+		width: 100px
+		margin: 0
+		padding: 0
+		line-height: 1.4em
+	&.list-amenity label
+		float: left
+		width: 163px
+		padding: 0 0 0 17px
+		margin: 0 7px
+		background: url(../img/icon-check.png) no-repeat left top
+		line-height: 1.4em
+
+div
+	&#search, &#property, &#about, &#blog, &#favorites
+		position: relative
+		clear: both
+		width: 970px
+		margin: 0
+		padding: 0
+	&#search h5, &#property h5, &#about h5, &#blog h5, &#favorites h5
+		padding-bottom: 4px
+		font-weight: normal
+		color: #535353
+		border-bottom: 1px dotted #535353
+
+section
+	&.property-inf, &.about-inf
+		float: left
+		width: 970px
+		font-size: 1.143em
+
+div
+	&.property-title, &.about-name
+		float: left
+		width: 675px
+		padding: 0 20px 5px 5px
+		font:
+			size: 18pt
+		p
+			margin: 5px 0 0 0
+			span
+				margin-left: 20px
+	&.property-price, &.about-area
+		float: right
+		width: 265px
+		padding: 0 5px 0 0
+		text-align: right
+
+section.property-bin
+	float: left
+	width: 610px
+	height: 293px
+	background: url(../img/bg-slideshow.png) no-repeat center bottom
+	margin: 4px 16px 5px 4px
+
+div.property-img
+	position: relative
+	float: left
+	width: 590px
+	height: 250px
+	background-color: white
+	padding: 9px
+	border: 1px solid #c1c1c1
+	-webkit-border-radius: 8px
+	-moz-border-radius: 8px
+	border-radius: 8px
+	-moz-box-shadow: 0 0 3px #888888
+	-webkit-box-shadow: 0 0 3px #888888
+	box-shadow: 0 0 3px #888888
+
+section
+	&.property-map, &.about-map
+		position: relative
+		float: left
+		margin: 4px 0 10px 0
+		width: 338px
+		height: 270px
+		background: url(../img/map-property.png) no-repeat center center
+		border: 1px solid #c1c1c1
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: 0 0 3px #888888
+		-webkit-box-shadow: 0 0 3px #888888
+		box-shadow: inset 1px 1px 10px #efefef
+
+div
+	&.property-gmap
+		float: left
+		width: 338px
+		height: 230px
+	&.property-lnks
+		float: left
+		width: 298px
+		height: 20px
+		padding: 10px 20px
+		background: url(../img/transparent-bg.png) 0 0 repeat
+		-webkit-border-radius: 0 0 8px 8px
+		-moz-border-radius: 0 0 8px 8px
+		border-radius: 0 0 8px 8px
+	&.about-gmap
+		float: left
+		width: 338px
+		height: 200px
+	&.about-addy
+		float: left
+		width: 314px
+		height: 46px
+		padding: 12px
+		background: url(../img/transparent-bg.png) 0 0 repeat
+		-webkit-border-radius: 0 0 8px 8px
+		-moz-border-radius: 0 0 8px 8px
+		border-radius: 0 0 8px 8px
+		p
+			margin: 0 auto
+			padding: 0
+			font-size: 0.786em
+			color: #424242
+
+section
+	&.neighborhood
+		float: left
+		width: 962px
+		margin: 20px 4px 25px 4px
+		h5
+			font-weight: normal
+			color: #535353
+	&.neighborhood-map
+		float: left
+		width: 960px
+		height: 258px
+		border: 1px solid #c1c1c1
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: 0 0 3px #888888
+		-webkit-box-shadow: 0 0 3px #888888
+		box-shadow: inset 1px 1px 10px #efefef
+	&.supply
+		float: left
+		width: 962px
+		margin: 20px 4px 25px 4px
+		h5
+			font-weight: normal
+			color: #535353
+		p
+			font-size: 0.786em
+			color: #424242
+	&.blog-title
+		h3
+			margin-bottom: 5px
+			padding: 0
+			font:
+				weight: bold
+				size: 18pt
+			color: #424242
+			a
+				color: #424242
+				&:visited
+					color: #424242
+		h6
+			margin: 0
+			font:
+				style: italic
+				size: 11pt
+			padding: 0
+
+	&.blog-text
+		img
+			float: left
+			width: 144px
+			height: 93px
+			margin-right: 10px
+			padding: 3px
+			background-color: #c3c3c3
+		p
+			font-size: 11pt
+			line-height: 1.5em
+			color: #424242
+		a
+			color: #094BA1
+			&:visited
+				color: #094BA1
+		a.read-more
+			display: block
+			padding-bottom: 30px
+			font:
+				size: 12pt
+	&.blog-tags
+		float: left
+		width: 530px
+		margin: 0px 0 30px 0
+		padding: 5px 10px
+		font-size: 0.786em
+		color: #424242
+		background-color: white
+		border: 1px solid #c1c1c1
+		-webkit-border-radius: 4px
+		-moz-border-radius: 4px
+		border-radius: 4px
+		label
+			margin: 0 10px
+			a
+				color: #424242
+				text-decoration: none
+				&:visited
+					color: #424242
+				&:hover
+					color: #5e8506
+/* Sidebar styles */
+
+aside
+	width: 340px
+	float: right
+
+section
+
+	&.side-bin2
+		float: left
+		display: block
+		margin: 0 0 10px 0
+		padding: 12px
+		color: #424242
+	&.side-bin h5, &.side-bin2 h5
+		font-weight: normal
+		color: #535353
+	&.myinfo, &.myfriends, &.agent, &.latest, &.gallery
+		width: 314px
+	&.myinfo-user
+		width: 100%
+		font-size: 0.786em
+		label
+			float: left
+			width: 90px
+			padding-right: 14px
+		p
+			float: left
+			width: 210px
+			margin: 0
+			padding: 0
+	&.myinfo-btn
+		float: right
+		width: 100%
+		text-align: right
+	&.myinfo-agent
+		float: left
+		width: 290px
+		margin: 10px 0 0 0
+		padding: 12px
+		font-size: 0.786em
+		color: #666666
+		background-color: #e5e5e5
+		text-shadow: 1px 1px 1px white
+		-webkit-border-radius: 4px
+		-moz-border-radius: 4px
+		border-radius: 4px
+	&.myfriends ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			float: left
+			width: 314px
+			display: block
+			margin: 0
+			padding: 5px 0
+			font-size: 0.786em
+			font-weight: bold
+			border-width: 1px 0 0 0
+			border-style: dotted
+			border-color: #959595
+			p
+				float: left
+				width: 302px
+				margin: 0
+				padding: 0
+	&.myfriends-btn
+		float: right
+		width: 100%
+		text-align: right
+	&.agent-thumb
+		float: left
+		width: 95px
+		height: 105px
+		margin-right: 10px
+		padding: 3px
+		img
+			border: 3px solid #c3c3c3
+	&.agent-info
+		float: left
+		width: 420px
+		p
+			margin: 0
+			padding: 0
+	&.agent-text
+		float: left
+		width: 203px
+		padding: 0
+		p
+			margin: 0
+			padding: 0
+	&.latest-item
+		padding-left: 24px
+		background: url(../img/icon-latest.png) no-repeat left 2px
+		h6
+			font-size: 0.857em
+			margin-bottom: 2px
+	&.search-map
+		float: left
+		width: 314px
+		height: 314px
+		background: url(../img/map-search.png) no-repeat center center
+		-webkit-border-radius: 6px
+		-moz-border-radius: 6px
+		border-radius: 6px
+	&.gallery img
+		float: left
+		width: 144px
+		height: 93px
+		padding: 3px
+		margin: 3px
+		background-color: #c3c3c3
+	&.footer-contact
+		margin: 4px 0 25px 0
+		padding: 12px
+		font-size: 0.929em
+		font-weight: bold
+		color: #929292
+		text-align: center
+		background-color: white
+		border: 1px solid #c1c1c1
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: 0 0 3px #888888
+		-webkit-box-shadow: 0 0 3px #888888
+		box-shadow: inset 1px 1px 10px #efefef
+		span
+			color: #343434
+			a
+				color: #06E
+				&:visited
+					color: #06E
+				&:hover
+					color: #5E8506
+	&.footer-nav
+		float: left
+		ul
+			margin: 0
+			padding: 0
+			font-size: 0.786em
+			list-style-type: none
+			li
+				float: left
+				padding: 0 10px
+				border-left: 1px solid
+				border-color: #c1c1c1
+				&:first-child
+					padding-left: 0px
+					border-left: none
+		a
+			font-weight: bold
+			color: #777777
+			&:hover
+				color: #5e8506
+	&.footer-copyright
+		float: left
+		clear: both
+		margin-top: 10px
+		padding: 0
+		color: #777777
+	&.footer-logo
+		float: right
+		text-align: right
+		line-height: 1.1em
+
+/* Sidebar section styles */
+/* =========== start FOOTER =========== */
+
+span
+	&.footer-name
+		color: #646464
+		font-size: 1.429em
+		font-weight: bold
+	&.footer-slogan
+		color: #838383
+		text-shadow: 1px 1px 1px white
+
+/* ============ end FOOTER ============ */
+/* ============ start CSS BUTTONS ============ */
+
+.button
+	*display: inline-block
+	zoom: 1
+	/* zoom and *display = ie7 hack for display:inline-block */
+	display: inline
+	vertical-align: baseline
+	margin: 0 1px
+	padding: 8px 15px
+	outline: none
+	cursor: pointer
+	font-size: 1em
+	text-align: center
+	text-decoration: none
+	-webkit-border-radius: 0.3em
+	-moz-border-radius: 0.3em
+	border-radius: 0.3em
+	&:hover
+		text-decoration: none
+
+.bigrounded
+	-webkit-border-radius: 2em
+	-moz-border-radius: 2em
+	border-radius: 2em
+
+.medium
+	font-size: 12px
+	padding: 5px 10px
+
+.small
+	font-size: 11px
+	padding: 0.2em 1em 0.275em
+
+/* ----- Color styles ----- */
+/* red */
+
+.b-red
+	color: white
+	border: 0
+	background: #ca171d
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317))
+	background: -moz-linear-gradient(top, #ed1c24, #aa1317)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317')
+	&:hover
+		background: #b41318
+		background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115))
+		background: -moz-linear-gradient(top, #c9151b, #a11115)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115')
+
+/* blue */
+
+.b-blue
+	color: white !important
+	border: 0
+	background: #1c4eae !important
+	background: -webkit-gradient(linear, left top, left bottom, from(#263e9f), to(#125cbc))
+	background: -moz-linear-gradient(top, #263e9f, #125cbc)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#263e9f', endColorstr='#125cbc')
+	&:hover
+		background: #184293
+		background: -webkit-gradient(linear, left top, left bottom, from(#263e9f), to(#125cbc))
+		background: -moz-linear-gradient(top, #263e9f, #125cbc)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#263e9f', endColorstr='#125cbc')
+
+/* cyan */
+
+.b-cyan
+	color: white
+	border: 0
+	background: #0095cd
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5))
+	background: -moz-linear-gradient(top, #00adee, #0078a5)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5')
+	&:hover
+		background: #007ead
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e))
+		background: -moz-linear-gradient(top, #0095cc, #00678e)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e')
+
+/* ----- Navigation button ----- */
+
+.nav
+	color: #323232
+	border: 0
+	background: none
+	&:hover
+		color: white
+		background: #184293
+		background: -webkit-gradient(linear, left top, left bottom, from(#263e9f), to(#125cbc))
+		background: -moz-linear-gradient(top, #263e9f, #125cbc)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#263e9f', endColorstr='#125cbc')
+
+/* ----- Search Now button ----- */
+
+.srch1
+	padding: 10px 0 2px 0
+	margin: 15px 15px 0 0
+
+.srch2
+	float: left
+	width: 207px
+	text-align: right
+	padding: 10px 0 14px 0
+
+/* ============= end CSS BUTTONS ============= */
+/* =========== start IMAGE BUTTONS =========== */
+
+input
+	&.btn-del
+		float: left
+		width: 12px
+		height: 12px
+		margin: 1px 0 0 0
+		padding: 0
+		background: url(../img/icon-delete.png) no-repeat center top
+		border: 0
+	&.btn-edi
+		float: left
+		width: 12px
+		height: 12px
+		margin: 1px 0 0 0
+		padding: 0
+		background: url(../img/icon-edit.png) no-repeat center top
+		border: 0
+
+/* ============ end IMAGE BUTTONS ============ */
+/* ============= start FLOAT DIV ============= */
+
+section.float-box
+	position: relative
+	float: right
+	width: 340px
+
+div
+	&.ui-datepicker
+		font-size: 62.5%
+	&.popup-form
+		display: none
+
+/* ============== end FLOAT DIV ============== */
+/* =========== start CONTROL CALENDAR SIZE =========== */
+/* ============ end CONTROL CALENDAR SIZE ============ */
+
+/* POPUP FORM */
+
+#signup_form, #login_form
+	padding: 20px 20px 30px 20px
+	background: #e5e5e5
+	min-height: 220px
+	h3
+		margin: 5px 0px 0px 0px
+		padding: 0px
+		color: black
+		font-size: 22px
+	p
+		margin: 5px 0px 10px 0px
+		padding: 5px 0px 0px 0px
+		color: black
+		font-size: 12px
+		text-transform: uppercase
+		text-shadow: 1px 1px white
+	label
+		font-size: 12px
+		padding: 10px 0px 0px 0px
+		margin: 0px 30px 25px 0px
+		float: left
+		text-transform: uppercase
+		text-shadow: 1px 1px white
+
+#password_form
+	padding: 20px 20px 30px 20px
+	background: #e5e5e5
+	min-height: 280px
+	h3
+		margin: 5px 0px 0px 0px
+		padding: 0px
+		color: black
+		font-size: 22px
+	p
+		margin: 5px 0px 10px 0px
+		padding: 5px 0px 0px 0px
+		color: black
+		font-size: 12px
+		text-transform: uppercase
+		text-shadow: 1px 1px white
+	label
+		font-size: 12px
+		padding: 10px 0px 0px 0px
+		margin: 0px 30px 25px 0px
+		float: left
+		text-transform: uppercase
+		text-shadow: 1px 1px white
+
+.inp-popup
+	width: 280px
+	height: 26px
+	border: 1px solid #CCC
+	margin: 4px 0px 16px 0px
+	background: #fafafa
+	float: right
+	border-radius: 6px
+	-moz-border-radius: 6px
+
+.popup-bt
+	color: white
+	font-size: 16px
+	background: -webkit-gradient(linear, left top, left bottom, from(#2343a3), to(#125cbc))
+	background: -moz-linear-gradient(top, #2343a3, #125cbc)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2343a3', endColorstr='#125cbc')
+	border: 1px solid #093670
+	padding: 6px 14px 6px 14px
+	font-weight: lighter
+	margin: 4px 0px 14px 20px
+	cursor: pointer
+	float: right
+	border-radius: 4px
+	-moz-border-radius: 4px
+	text-transform: uppercase
+	&:hover
+		color: black
+
+p#login_error
+	color: red
+	
+	
+	
+/**/	
+/* SPARKBOX-SELECT */
+/**/
+
+.sb-custom
+	cursor: pointer
+	display: inline
+	position: relative
+	width: 100%
+	padding: 0
+	margin: 0
+
+.sparkbox-custom
+	display: none
+
+.no-js .sparkbox-custom
+	display: block
+
+.sb-select
+	background: url('../img/cselect-arrow.png') no-repeat top right
+	text-shadow: 1px 1px 1px #fff
+	cursor: pointer
+	border: none
+	color: #444
+	height: 23px
+	padding: 2px 0 0 10px !important
+	margin: 0 !important
+	position: relative
+	text-decoration: none
+	z-index: 1
+	width: 49px
+	*z-index: 1
+
+.sb-dropdown
+	background: #f3f3f3
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0px 6px 8px -8px rgba(0, 0, 0, 0.5)
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0px 6px 8px -8px rgba(0, 0, 0, 0.5)
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0px 6px 8px -8px rgba(0, 0, 0, 0.5)
+	-webkit-border-radius: 4px
+	-moz-border-radius: 4px
+	border-radius: 4px
+	display: none
+	left: 1px
+	list-style: none
+	margin: 2px 0 0 0
+	padding: 0
+	position: absolute
+	top: 1.5em
+	z-index: 999
+	border: 1px solid #ccc
+	width: 100px
+	*z-index: 999
+	a
+		color: #444
+		display: block
+		padding: 5px
+		text-decoration: none
+		&:hover
+			background: #dcdcdc
+	.selected
+		background: #dcdcdc
+
+
+
+/**/	
+/* TABS SLIDESHOW */
+/**/
+
+/* container for slides */
+
+.slides
+	float: left
+	width: 610px
+	height: 293px
+	background: url(../img/bg-slideshow.png) no-repeat center bottom
+	margin: 4px 16px 0 4px
+
+.images
+	position: relative
+	float: left
+	width: 590px
+	height: 250px
+	background-color: #ffffff
+	padding: 9px
+	border: 1px solid #c1c1c1
+	-webkit-border-radius: 8px
+	-moz-border-radius: 8px
+	border-radius: 8px
+	-moz-box-shadow: 0 0 3px #888888
+	-webkit-box-shadow: 0 0 3px #888888
+	box-shadow: 0 0 3px #888888
+	.img_box
+		display: none
+		position: absolute
+		margin: 0
+		height: 250px
+		img, section
+			position: absolute
+		img
+			z-index: 0
+			padding: 0 !important
+			margin: 0 !important
+		section
+			bottom: 0
+			z-index: 1
+			width: 570px
+			*width: 540px
+			/*IE7 fix */
+			height: auto
+			background: url(../img/transparent-bg.png) 0 0 repeat
+			padding: 10px
+			*padding-right: 40px
+			/*IE7 fix */
+			h1
+				float: left
+				width: 400px
+				margin: 0
+				padding: 0 20px 0 0
+				font-weight: normal
+				font-size: 0.813em
+				color: #3a3a3a
+			br
+				margin-bottom: 3px
+			a
+				font-weight: bold
+				color: #739527
+				&:hover
+					color: #ee7d03
+			.img_btn
+				float: right
+				width: 90px
+
+/* single slide */
+
+/* prev and next buttons */
+
+.slidenav
+	z-index: 2
+	width: 580px
+	position: absolute
+	margin: 0 5px
+	text-align: center
+	bottom: 125px
+
+.forward, .backward
+	display: inline-block
+	width: 40px
+	margin: 0
+	height: 40px
+	cursor: pointer
+
+.forward
+	float: right
+	background: url(../img/slide_next.png) 0 0 no-repeat
+
+.backward
+	float: left
+	background: url(../img/slide_prev.png) 0 0 no-repeat
+
+/* disabled navigational button. is not needed when tabs are configured with rotate: true */
+
+.disabled
+	visibility: hidden !important
+	
+
+
+#pls-quick-search-3
+	height: 283px
+
+aside
+	float: right
+
+	
+div
+	&#full-form
+		background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dadada))
+		background: -moz-linear-gradient(top, #f2f2f2, #dadada)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#dadada')
+		border-radius: 8px
+		-moz-border-radius: 8px
+		border: 1px solid #bfbfbf
+		padding: 20px
+		margin-bottom: 14px
+		h6
+			margin: 0px
+			padding: 0px
+			text-transform: uppercase
+			font-size: 18px
+			margin-bottom: 10px
+	&.form-l
+		width: 285px
+		float: left
+		margin: 0px 20px 0px 0px
+	&.form-m
+		width: 285px
+		float: left
+		margin: 0px 0px 0px 0px
+	&.form-r
+		width: 340px
+		float: right
+	&.form-r-l
+		float: left
+		width: 90px
+	&.form-r-r
+		float: right
+		width: 190px
+
+	&#full-form
+		#full-search
+			color: white
+			font-size: 16px
+			background: #f99727
+			background: -webkit-gradient(linear, left top, left bottom, from(#a6d84a), to(#4dab23))
+			background: -moz-linear-gradient(top, #a6d84a, #4dab23)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6d84a', endColorstr='#4dab23')
+			border: 1px solid #4eab23
+			padding: 6px 14px 6px 14px
+			font-weight: bold
+			margin: 14px 0px 0px 0px
+			cursor: pointer
+			float: right
+			text-shadow: 1px 1px black
+			&:hover
+				background: -webkit-gradient(linear, left top, left bottom, from(#4dab23), to(#a6d84a))
+				background: -moz-linear-gradient(top, #4dab23, #a6d84a)
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4dab23', endColorstr='#a6d84a')
+		.slt-half select
+			padding: 4px
+			width: 195px
+			border: 1px solid #a09f9f
+			margin-bottom: 4px
+		.inp-full 
+			width: 232px
+			height: 32px
+			border: 1px solid #a09f9f
+			margin: 4px 7px 0px 0px
+			padding: 0px 0px 0px 4px
+			background: #fbfbfb
+	&.checkboxes
+		padding: 20px 0px 10px 0px
+		width: 720px
+		float: left
+	&#full-form
+		label
+			margin: 0px 10px 0px 0px
+			font-size: 12px
+		input.ticks
+			padding: 0px
+			margin: 20px 5px 0px 0px
+	&.ui-datepicker
+		font-size: 90%
+	&#floating-box
+		/* FLOATING MAP - floating-box dive MUST float right, have a relative position and have a defined width. */
+		position: relative
+		width: 290px
+
+// Sidebar Form
+.pls-quick-search
+	&.widget
+		float: left
+		width: 325px
+		height: 284px
+		margin: 15px 0 0px 0 !important
+		padding: 10px
+		color: #666666
+		background-color: #e5e5e5
+		text-shadow: 1px 1px 1px white
+		-webkit-border-radius: 8px
+		-moz-border-radius: 8px
+		border-radius: 8px
+		-moz-box-shadow: inset 1px 1px 10px #9a9a9a
+		-webkit-box-shadow: inset 1px 1px 10px #9a9a9a
+		box-shadow: inset 1px 1px 10px #9a9a9a
+		h5
+			margin: 5px 0 10px 5px
+		.chzn-container
+			width: 140px !important
+		.chzn-drop
+			width: 138px !important
+		.chzn-search input
+			width: 103px !important
+		.slt-available-on
+			padding: 4px
+			width: 100px
+			margin-bottom: 4px
+			.chzn-container
+				width: 140px !important
+			.chzn-drop
+				width: 138px !important
+			.chzn-search input
+				width: 103px !important
+		.cselect3
+			.chzn-container
+				width: 65px !important
+			.chzn-drop
+				width: 63px !important
+			.chzn-search input
+				width: 28px !important
+		label
+			font-size: 10pt
+		h6
+			font-size: 14pt
+			padding-bottom: 10px
+		input#full-search
+			float: right
+			margin: 5px 90px 0 0
+			padding:	8px 15px
+		
+// Search Page Form
+#form-search
+	.slt-full
+		padding: 4px
+		width: 265px
+		margin-bottom: 4px
+		.chzn-container
+			width: 200px !important
+		.chzn-drop
+			width: 198px !important
+		.chzn-search input
+			width: 163px !important
+	.slt-available-on
+		padding: 4px
+		width: 100px
+		margin-bottom: 4px
+		.chzn-container
+			width: 140px !important
+		.chzn-drop
+			width: 138px !important
+		.chzn-search input
+			width: 103px !important
+	.slt-sma
+		padding: 4px
+		width: 85px
+		margin-bottom: 4px
+		.chzn-container
+			width: 80px !important
+		.chzn-drop
+			width: 78px !important
+		.chzn-search input
+			width: 43px !important
+	label
+		font-size: 10pt
+	h6
+		font-size: 14pt
+		padding-bottom: 10px
+	input#full-search
+		float: right
+		margin: -33px 160px 0 0
+		padding:	8px 15px
+.sort_by_wrapper
+	float: right
+	width:	300px
+	margin-top:	-35px
+	padding-bottom:	20px
+	text-align: right
+	.chzn-drop
+		width: 150px !important
+	#sort-by_chzn
+		width: 150px !important
+	.chzn-search
+		input
+			width: 114px !important
+
+	
+	span
+		text-align: left
+	ul
+		li
+			text-align: left
+
+#main
+	margin-top: 15px
+	float: left
+	width: 580px
+	h2
+		position: relative
+		clear: both
+		width: 970px
+		margin: 0
+		padding-bottom: 4px
+		font-weight: normal
+		color: #535353
+	.list
+		// margin-top: 20px
+		.list-item
+			img
+				float: left
+			.blog-title
+				padding-left: 20px
+				width: 550px
+				float: left
+			.blog-text
+				float: left
+				padding-left: 20px
+				width: 550px
+				min-height: 120px
+.compliance-wrapper
+	margin-top: 20px
+	float: left
+	img
+		float: left
+		margin: 0 10px 3px 0
+	p
+		margin-top: 0
+		font:
+			size: 12px
+		&.property-details-compliance
+			font:
+				size: 10pt
+		&.inline-compliance, &.listings-widget-compliance
+			float: left
+			// width: 100%
+			span
+				margin-right: 20px
+				color: #000
+				font:
+					size: 12px
+					weight: normal
+					
+// fixing blueprint's "article img" styling in all.css for PLS_Image::load()
+article img
+	padding: 0 !important
+// property details - main image
+.img_box
+	width: 588px !important
+	height: 250px !important
+	overflow: hidden !important
+	border: none !important
+	img
+		margin: 0 !important
+// property details - gallery
+.gallery
+	img
+		margin: 5px !important
+		border: 3px solid #c3c3c3 !important
+// listings search - floating map
+#floating-box
+	float: left
+	position: absolute
+.orbit-html-caption
+	display: none
+.orbit-bullets
+	margin-top: -100px !important
+.orbit-caption
+	background-color: rgba(255, 255, 255, 0.8) !important
+	height: 70px
+	text-align: left !important
+	padding: 0px !important
+	p
+		color: #3A3A3A !important
+		margin: 10px
+		&.address
+			font:
+				size: 14pt
+	a
+		color: #3A3A3A
+		&.button
+			position: absolute
+			margin: -40px 0 0 480px
+	.beds, .baths
+		font:
+			size: 11pt
+			weight: 200
+	.baths
+		margin-left: 20px
+	.price
+		color: #5E8506 !important
+		margin-left: 30px
+		font:
+			size: 12pt
+			weight: 400
+section
+	// Recent Listings Widget
+	&.pls-listings, &.pls-recent-posts
+		.compliance-wrapper
+			margin-top: 0
+			float: none
+		&.widget
+			float: left
+			border: 1px solid #C1C1C1
+			color: #424242
+			background-color: #fff
+			padding: 25px
+			width: 295px
+			margin-top: 15px
+			border-radius: 8px
+			box-shadow: inset 1px 1px 10px #efefef
+			-webkit-box-shadow: 0 0 3px #888
+			display: block
+			h3
+				color: #535353
+			.listing-item
+				&:first-child
+					border-top: none
+					padding-top: 0
+				border-top: 1px solid #C1C1C1
+				padding-top: 10px
+				h4
+					margin: 0
+					font:
+						size: 13pt
+						weight: 600
+					a
+						text-decoration: none
+						color: #535353
+						&:visited
+							color: #535353
+						&:hover
+							color: #094BA1
+				section.details
+					font:
+						size: 11pt
+						weight: 400
+				section.featured-image
+					padding: 5px 5px 5px 0px
+					img
+						border: 3px solid #c1c1c1
+				a.learn-more
+					display: block
+					padding-bottom: 10px
+					text-decoration:	none
+					color: #094BA1
+					&:visited
+						color: #094BA1
+				p.mls
+					float: right
+					font-size: 12px
+					margin-right: 10px
+			// Blog Posts
+			h6
+				width: 270px
+				a
+					text-decoration:	none
+					color: #094BA1
+					&:visited
+						color: #094BA1
+			em
+				width: 270px
+	// Agent Widget
+	&.pls-agent
+		&.widget
+			float: left
+			display: block
+			margin: 15px 0 0 0
+			padding: 12px
+			color: #424242
+			background-color: white
+			width: 320px
+			border: 1px solid #c1c1c1
+			-webkit-border-radius: 8px
+			-moz-border-radius: 8px
+			border-radius: 8px
+			-moz-box-shadow: 0 0 3px #888888
+			-webkit-box-shadow: 0 0 3px #888888
+			box-shadow: inset 1px 1px 10px #efefef
+			a
+				text-decoration: none
+				color: #094BA1
+				&:visited
+					color: #094BA1
+				&:hover
+					color: #424242
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+				li
+					margin: 15px 0 0 0
+			p
+				line-height: 1.2em
+
+// Sidebar adjustment for Blog
+body.page-template-page-template-blog-php
+	aside
+		margin-top: 50px
+
+// Blog Single
+article.post
+	background-color: #fff
+	border: 1px solid #c1c1c1
+	padding: 12px
+	width: 590px
+	-webkit-border-radius: 8px
+	-moz-border-radius: 8px
+	border-radius: 8px
+	-moz-box-shadow: inset 1px 1px 10px #efefef
+	-webkit-box-shadow: inset 1px 1px 10px #efefef
+	box-shadow: inset 1px 1px 10px #efefef
+	a
+		color: #094BA1
+		&:hover
+			color: #323232
+			background: #fff
+			text-decoration: none
+	nav
+		width: 590px
+	.prev
+		margin: 20px 0 0 0
+		max-width: 280px
+		line-height: 28px
+		a
+			color: #094BA1
+			background-color: #F3F3F3
+			&:visited
+				color: #094BA1
+			&:hover
+				color: #323232
+	.next
+		margin: 20px 0 0 0
+		max-width: 280px
+		line-height: 28px
+		a
+			color: #094BA1
+			background-color: #F3F3F3
+			&:visited
+				color: #094BA1
+			&:hover
+				color: #323232
+
+// Single Property
+body.single-property
+	nav
+		width: 960px
+	.prev
+		margin: 0
+		max-width: 430px
+		line-height: 28px
+		float: left
+		a
+			color: #094BA1
+			background-color: #F3F3F3
+			&:visited
+				color: #094BA1
+			&:hover
+				color: #323232
+	.next
+		margin: 0
+		max-width: 280px
+		line-height: 28px
+		float: right
+		a
+			color: #094BA1
+			background-color: #F3F3F3
+			&:visited
+				color: #094BA1
+			&:hover
+				color: #323232
+
+// Listings Page - Floating Map
+#float-div
+	position: absolute
+	padding: 20px
+	background-color: #fff
+	border: 1px solid #c1c1c1
+	padding: 12px
+	-webkit-border-radius: 8px
+	-moz-border-radius: 8px
+	border-radius: 8px
+	-moz-box-shadow: inset 1px 1px 10px #efefef
+	-webkit-box-shadow: inset 1px 1px 10px #efefef
+	box-shadow: inset 1px 1px 10px #efefef
+	
+// Search Listings H2
+#search, #property
+	h2
+		position: relative
+		clear: both
+		width: 970px
+		margin: 0 0 15px 0
+		padding-bottom: 4px
+		font:
+			weight: normal
+			size: 14pt
+		
+		border-bottom: 1px dotted #535353
+		color: #535353
+// Blog Single
+body.single-post
+	h2
+		width: 570px !important
+	img
+		&.aligncenter
+			margin: inherit 0px
+			width: auto
+			clear: both
+			display: block
+			margin-left: auto
+			margin-right: auto
+		&.alignleft
+			margin: 20px 20px 20px 0
+			display: inline
+		&.alignright
+			margin: 20px 0 20px 20px
+			display: inline
+#main
+	.user-generated
+		h2
+			font
+				size: 16pt
+		#company-phone
+			margin: 0
+			font:
+				size: 13pt
+		#company-address
+			margin: 0
+			font:
+				size: 13pt
+		#company-city-state
+			font:
+				size: 13pt
+
+body.page-template-page-template-listings-php
+	aside
+		min-height: 400px
+
+#listings-pagination
+	a
+		padding: 10px
+		float: left
+		display: block
+		color: #094BA1
+		text-decoration: none
+		&:hover
+			color: #5E8506
+		&:first-child
+			padding-left: 0px
+		&:last-child
+			padding-right: 0px
+			
+
+.sort_wrapper
+	float: left !important
+	margin-top: 0
+	.sort_item
+		float: left
+		margin-right: 20px
+
+#placester_listings_list_length
+	label
+		float: right !important
+		margin-top: -28px
+
+#placester_listings_list_paginate
+	text-align: center
+	margin: 20px 0 20px 0
+	a
+		color: #094BA1
+		&:visited
+			color: #094BA1
+		&:hover
+			color: #5E8506
+		&.first
+			float: left
+		&.last
+			float: right
+		&.previous
+			padding-right: 15px
+		&.next
+			padding-left: 15px
+	span
+		a
+			padding: 0 25px
+			&.paginate_active
+				font:
+					weight: 600
+
+.placester_contact
+	padding: 15px
+	border: 1px solid #C1C1C1
+	color: #424242
+	margin: 15px 0 0 0
+	background: white
+	-webkit-border-radius: 8px
+	-moz-border-radius: 8px
+	border-radius: 8px
+	.common-side-cont
+		label
+			color: #5C5C5C
+			font:
+				weight: 600
+		input[type="email"], input[type="text"], textarea
+			border: 2px solid #c3c3c3
+			
+nav.posts
+	clear: both
+
+#main
+	.list
+		.sticky
+			.blog-title
+				background: #094ba1
+				padding: 15px
+				width: 520px
+				margin-left: 20px
+
+				h3 
+					a
+						color: #fff
+				h6
+					color: #cdcdcd
+
+.wp-caption
+	.wp-caption-text
+		margin-top: .5em
+		border-top: 1px dotted #cdcdcd
+		border-bottom: 1px dotted #cdcdcd
+		padding: .5em
+		color: #666666
